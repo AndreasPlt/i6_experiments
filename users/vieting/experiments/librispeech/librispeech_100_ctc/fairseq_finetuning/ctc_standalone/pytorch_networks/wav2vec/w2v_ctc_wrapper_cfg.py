@@ -64,5 +64,4 @@ class ModelConfig:
     @classmethod
     def from_dict(cls, cfg: dict):
         ret = cls(**cfg)
-        return ret
-        
+        return ret   
