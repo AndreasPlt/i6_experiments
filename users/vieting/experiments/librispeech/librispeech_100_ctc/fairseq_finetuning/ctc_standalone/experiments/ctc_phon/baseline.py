@@ -21,8 +21,6 @@ def eow_phon_ls100_ctc_base(
     train_name_suffix: Optional[str] = None,
     fairseq_root: Optional[tk.Path] = None,
     ):
-    if fairseq_github_url is not None:
-        set_fairseq_path(fairseq_github_url, fairseq_github_branch, fairseq_github_commit)
     if train_name_suffix is None:
         prefix_name = "ctc_eow_phon"
     else:
